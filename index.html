@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="./assets/css/globals.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+        },
+        extend: {
+          fontFamily: {
+            'sans': ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            custom: {
+              100: '#E5E5E5',
+              200: '#FCB72E',
+              300: '#0B914A',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+</head>
+<body class="bg-custom-100">
+  <nav class="bg-black text-white py-2">
+    <div class="container flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="">
+          <img src="assets/images/logo/icon-light.png" class="w-16 h-auto" alt="" />
+        </a>
+  
+        <ul class="flex items-center gap-5">
+          <li>
+            <a href="" class="font-medium">Início</a>
+          </li>
+          <li>
+            <a href="" class="font-medium">Quem somos</a>
+          </li>
+          <li>
+            <a href="" class="font-medium">Plano de assinatura</a>
+          </li>
+          <li>
+            <a href="" class="font-medium">Nossos Produtos</a>
+          </li>
+          <li>
+            <a href="" class="font-medium">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="flex items-center gap-5">
+        <li>
+          <a href="" class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            Carrinho
+          </a>
+        </li>
+        <li>
+          <a href="" class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+              <polyline points="10 17 15 12 10 7"></polyline>
+              <line x1="15" y1="12" x2="3" y2="12"></line>
+            </svg>
+            Minha conta
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="relative">
+    <div class="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
+    <img src="./assets/images/hero.jpg" class="w-full h-screen object-fit object-center" alt="">
+  </section>
+
+  <section class="py-10 overflow-hidden">
+    <div class="container relative">
+      <svg class="w-1/2 h-auto -z-10 absolute top-0 left-1/2 -translate-x-1/2 fill-none opacity-30" viewBox="0 0 856 988" xmlns="http://www.w3.org/2000/svg">
+        <path d="M725.3 418.4V665.6L428 837.3L130.7 665.6V322.4L386.6 174.6L301.1 572.7L456.2 551.5L428 731.4L607.9 417.5L477.4 431.6L555 224L601.3 100.1L574.8 84.8L428 0L0.200195 247V741L428 988L855.8 741V446.2L725.3 418.4Z" fill="#CACACA"/>
+        <path d="M725.3 322.7V418.4L855.8 446.2V248.2L725.3 322.7Z" fill="#CACACA"/>
+        <path d="M725.3 322.4V322.7L855.8 248.2V247L685 148.4L638.6 272.3L725.3 322.4Z" fill="#CACACA"/>
+      </svg>
+
+      <div class="mb-16 text-center">
+        <h2 class="mb-2 font-bold text-5xl">Conheça o Hércules Functional</h2>
+        <p class="text-lg">Treinos completos para atletas que buscam alta performance em functional fitness</p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-32 items-center">
+        <div>
+          <img src="./assets/images/about.jpg" class="w-full h-auto block rounded-lg object-fit object-center" alt="">
+        </div>
+        <div>
+          <h3 class="mb-4 font-bold text-4xl">Apoiado pela ciência. Conduzidos pela paixão. Adaptado para você.</h3>
+          <p class="mb-6">O Hércules Functional é um programa de treinamento que busca a alta qualidade e se utiliza de ferramentas que permitem a individualização dos programas de treinamento com o objetivo de aumentar a performance física dos praticantes do Functional Fitness.</p>
+          <a href="" class="px-10 py-3 inline-flex bg-custom-200 font-bold">Conheça nossos planos</a>
+        </div>
+      </div>
+
+      <p class="w-1/2 my-16 mx-auto text-center text-xl">Acreditamos que o treinamento bem estruturado é a base para o sucesso do atleta: e queremos levar essa metodologia para seus treinos e seu BOX.</p>
+
+      <div class="grid grid-cols-3 gap-10">
+        <img src="./assets/images/athletes/pedro-egito.jpeg" class="w-full h-full rounded-lg object-fit object-center" alt="">
+        <img src="./assets/images/athletes/fernanda-kvra.jpg" class="w-full h-full rounded-lg object-fit object-center" alt="">
+        <img src="./assets/images/athletes/caio-madrid.jpeg" class="w-full h-full rounded-lg object-fit object-center" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gradient py-20">
+    <div class="container">
+      <div class="py-10 bg-white rounded-xl text-center">
+        <h2 class="mb-2 text-2xl">Plano Individual e BOX</h2>
+        <p class="font-bold text-3xl">Treino inteligente, adaptável e acessível</p>
+        
+        <div class="my-16 flex justify-center gap-16">
+          <div class="w-60">
+            <img src="./assets/images/logo/icon-dark.png" class="w-20 h-auto mx-auto" alt="">
+            <h3 class="mt-2 mb-2 text-lg font-bold">Plano Individual</h3>
+            <p>Programação de treino para atletas de Functional Fitness, do amador à elite.</p>
+            <div class="my-4 border-b-2 border-slate-200"></div>
+            <a href="" class="px-10 py-3 inline-flex bg-custom-200 font-bold">Saiba Mais</a>
+          </div>
+
+          <div class="w-60">
+            <img src="./assets/images/logo/icon-dark.png" class="w-20 h-auto mx-auto" alt="">
+            <h3 class="mt-2 mb-2 text-lg font-bold">Plano BOX</h3>
+            <p>Leve nossa metodologia apoiada pela ciência para o seu BOX de functional fitness.</p>
+            <div class="my-4 border-b-2 border-slate-200"></div>
+            <a href="" class="px-10 py-3 inline-flex bg-custom-200 font-bold">Saiba Mais</a>
+          </div>
+        </div>
+
+        <p class="w-2/3 mx-auto text-xl">Adaptamos seu treino de acordo com seu nível de condicionamento físico e seus objetivos — como nenhum outro método faz.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-10 bg-custom-200">
+    <div class="container">
+      <div class="w-1/2 mb-16 mx-auto text-center">
+        <h2 class="mb-4 font-bold text-5xl">Quem conhece não procura outro plano</h2>
+        <p class="text-lg">Confira os comentários de atletas que não abrem mão do programa Hércules Funcional para alcançar os melhores resultados.</p>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+            <div class="text-center mb-6">
+              <img src="./assets/images/athletes/fernanda-kvra.jpg" class="w-full h-60 object-cover object-center mx-auto mb-2" alt="">
+            </div>
+            
+            <div class="px-10 py-5 text-center">
+              <p class="text-xl font-bold">Fernanda Scarelli</p>
+              <div class="my-4 text-sm">
+                <p>BCC times 2020</p>
+                <p>TCB ELITE 2020</p>
+                <p>Monstar Games Elite 2021</p>
+                <p>Fitland Elite 2022</p>
+              </div>
+              <p class="text-sm">
+                Estou no Hércules Functional há mais de 4 anos, e desde o início sabia que estava no caminho certo!! Equipe extremamente competente, com uma gigantesca bagagem teórica e prática. Comecei competindo no Amador e hoje tenho na minha trajetória 4 competições na Elite, sendo uma internacional (Fitland - Colômbia/2022). O Hércules Functional me mostra que é possível conciliar trabalho e rotina de treino, com organização e bom planejamento.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+            <div class="text-center mb-6">
+              <img src="./assets/images/athletes/fernanda-kvra.jpg" class="w-full h-60 object-cover object-center mx-auto mb-2" alt="">
+            </div>
+            
+            <div class="px-10 py-5 text-center">
+              <p class="text-xl font-bold">Fernanda Scarelli</p>
+              <div class="my-4 text-sm">
+                <p>BCC times 2020</p>
+                <p>TCB ELITE 2020</p>
+                <p>Monstar Games Elite 2021</p>
+                <p>Fitland Elite 2022</p>
+              </div>
+              <p class="text-sm">
+                Estou no Hércules Functional há mais de 4 anos, e desde o início sabia que estava no caminho certo!! Equipe extremamente competente, com uma gigantesca bagagem teórica e prática. Comecei competindo no Amador e hoje tenho na minha trajetória 4 competições na Elite, sendo uma internacional (Fitland - Colômbia/2022). O Hércules Functional me mostra que é possível conciliar trabalho e rotina de treino, com organização e bom planejamento.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+            <div class="text-center mb-6">
+              <img src="./assets/images/athletes/fernanda-kvra.jpg" class="w-full h-60 object-cover object-center mx-auto mb-2" alt="">
+            </div>
+            
+            <div class="px-10 py-5 text-center">
+              <p class="text-xl font-bold">Fernanda Scarelli</p>
+              <div class="my-4 text-sm">
+                <p>BCC times 2020</p>
+                <p>TCB ELITE 2020</p>
+                <p>Monstar Games Elite 2021</p>
+                <p>Fitland Elite 2022</p>
+              </div>
+              <p class="text-sm">
+                Estou no Hércules Functional há mais de 4 anos, e desde o início sabia que estava no caminho certo!! Equipe extremamente competente, com uma gigantesca bagagem teórica e prática. Comecei competindo no Amador e hoje tenho na minha trajetória 4 competições na Elite, sendo uma internacional (Fitland - Colômbia/2022). O Hércules Functional me mostra que é possível conciliar trabalho e rotina de treino, com organização e bom planejamento.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+            <div class="text-center mb-6">
+              <img src="./assets/images/athletes/fernanda-kvra.jpg" class="w-full h-60 object-cover object-center mx-auto mb-2" alt="">
+            </div>
+            
+            <div class="px-10 py-5 text-center">
+              <p class="text-xl font-bold">Fernanda Scarelli</p>
+              <div class="my-4 text-sm">
+                <p>BCC times 2020</p>
+                <p>TCB ELITE 2020</p>
+                <p>Monstar Games Elite 2021</p>
+                <p>Fitland Elite 2022</p>
+              </div>
+              <p class="text-sm">
+                Estou no Hércules Functional há mais de 4 anos, e desde o início sabia que estava no caminho certo!! Equipe extremamente competente, com uma gigantesca bagagem teórica e prática. Comecei competindo no Amador e hoje tenho na minha trajetória 4 competições na Elite, sendo uma internacional (Fitland - Colômbia/2022). O Hércules Functional me mostra que é possível conciliar trabalho e rotina de treino, com organização e bom planejamento.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="mb-2 text-2xl">Nossa loja</h2>
+        <p class="text-4xl font-bold">Leve a Hércules Funcional com você!</p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-4 gap-16">
+        <div class="relative pb-10 bg-white shadow rounded-lg overflow-hidden">
+          <img src="./assets/images/camisa-feminina.jpeg" class="w-full h-auto" alt="">
+
+          <div class="p-5">
+            <div class="flex items-center justify-between">
+              <label class="text-sm text-gray-500">Vestuário</label>
+              <span>R$80,00</span>
+            </div>
+
+            <h3 class="mt-4 leading-5 font-bold text-center">Camisa de Treino Feminina</h3>
+
+            <a href="" class="mt-6 py-3 flex items-center justify-center bg-custom-200 font-bold absolute bottom-0 left-0 right-0">Ver produto</a>
+          </div>
+        </div>
+        <div class="relative pb-10 bg-white shadow rounded-lg overflow-hidden">
+          <img src="./assets/images/camisa-masculina.jpg" class="w-full h-auto" alt="">
+
+          <div class="p-5">
+            <div class="flex items-center justify-between">
+              <label class="text-sm text-gray-500">Vestuário</label>
+              <span>R$80,00</span>
+            </div>
+
+            <h3 class="mt-4 leading-5 font-bold text-center">Camisa de Treino Masculina</h3>
+
+            <a href="" class="mt-6 py-3 flex items-center justify-center bg-custom-200 font-bold absolute bottom-0 left-0 right-0">Ver produto</a>
+          </div>
+        </div>
+        <div class="relative pb-10 bg-white shadow rounded-lg overflow-hidden">
+          <img src="./assets/images/ebook.jpg" class="w-full h-auto" alt="">
+
+          <div class="p-5">
+            <div class="flex items-center justify-between">
+              <label class="text-sm text-gray-500">Ebook</label>
+              <span>R$87,00</span>
+            </div>
+
+            <h3 class="mt-4 leading-5 font-bold text-center">Livro Aspectos Básicos da Teoria e Da Metodologia do Treinamento Esportivo</h3>
+
+            <a href="" class="mt-6 py-3 flex items-center justify-center bg-custom-200 font-bold absolute bottom-0 left-0 right-0">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white py-2">
+    <div class="container flex items-center justify-center">
+      <a href="inline-flex">
+        <img src="assets/images/logo/icon-light.png" class="w-20 h-auto" alt="" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script src="./assets/js/globals.js"></script>
+</body>
+</html>
