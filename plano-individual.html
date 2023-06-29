@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./assets/css/globals.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: {
+            DEFAULT: '1rem',
+          }
+        },
+        extend: {
+          fontFamily: {
+            'sans': ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            custom: {
+              100: '#E5E5E5',
+              200: '#FCB72E',
+              300: '#0B914A',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <nav class="bg-black text-white py-2">
+    <div class="container flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="">
+          <img src="assets/images/logo/icon-light.png" class="w-16 h-auto" alt="" />
+        </a>
+  
+        <ul class="flex items-center gap-5">
+          <li>
+            <a href="/" class="font-medium">Início</a>
+          </li>
+          <li>
+            <a href="/plano-individual.html" class="font-medium">Plano Individual</a>
+          </li>
+          <li>
+            <a href="/para-o-seu-box.html" class="font-medium">Para o seu Box</a>
+          </li>
+          <li>
+            <a href="/loja" class="font-medium">Nossos Produtos</a>
+          </li>
+          <li>
+            <a href="/blog" class="font-medium">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="flex items-center gap-5">
+        <li>
+          <a href="" class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            Carrinho
+          </a>
+        </li>
+        <li>
+          <a href="" class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+              <polyline points="10 17 15 12 10 7"></polyline>
+              <line x1="15" y1="12" x2="3" y2="12"></line>
+            </svg>
+            Minha conta
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="test-offer" class="fixed bottom-3 right-3 py-2 bg-custom-100 shadow-xl transition-all">
+    <div class="flex items-center gap-5">
+      <button class="p-3" id="test-offer-control">
+        <svg class="h-6 w-6 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div>
+        <h2 class="px-2 mb-2 font-medium text-lg">Experimente por 1 semana e ateste a eficácia da Hercules Funcional</h2>
+        <a href="" class="px-10 py-3 inline-flex bg-custom-200 font-bold">Baixar planilha grátis</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 bg-custom-100">
+    <div class="container">
+
+      <div class="text-center">
+        <img src="./assets/images/logo/icon-dark.png" class="w-20 h-auto mx-auto" alt="">
+        <h1 class="mt-2 mb-2 font-bold text-4xl md:text-5xl">Plano Individual</h1>
+      </div>
+      <p class="text-center font-medium text-lg md:text-2xl">Desenhado especialmente para você</p>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+        <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
+          <h2 class="mb-2 font-bold text-2xl">1 Hora</h2>
+          <p>
+            Programa perfeito para atletas que dispõem de menos tempo, mantendo exercícios de alta complexidade prática intensa do barbell cycling.
+          </p>
+        </div>
+        <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
+          <h2 class="mb-2 font-bold text-2xl">Adaptada</h2>
+          <p>
+            A versão adaptada fornece um programa de treino mais acessível com habilidades menos complexas, além do barbell cycling moderado.
+          </p>
+        </div>
+        <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
+          <h2 class="mb-2 font-bold text-2xl">Elite</h2>
+          <p>
+            O programa de treino para atletas da elite do Fitness Functional é completo, demandando disponibilidade de 3h a 4h para todo o treinamento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 bg-gradient">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 items-center bg-white rounded-xl overflow-hidden">
+        <div>
+          <img src="./assets/images/monstar-games-2021.jpg" class="w-full h-auto object-cover object-center" alt="">
+        </div>
+        <div class="p-5 md:p-0 md:col-span-2 text-center md:text-left">
+          <h2 class="mb-2 font-bold text-2xl md:text-4xl">Destaque-se nas competições que almeja!</h2>
+          <p class="mb-4 font-medium text-lg md:text-xl">O plano individual Hércules Funcional é perfeito para atletas que buscam a elite no functional fitness.</p>
+          <a href="" class="px-10 py-3 inline-flex bg-custom-200 font-bold">Assinar agora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 bg-custom-200">
+    <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
+      <div class="md:order-1">
+        <img src="./assets/images/athletes/goleonn.jpg" class="w-full h-auto rounded-lg" alt="">
+      </div>
+      <div class="font-medium text-center md:text-left">
+        <div class="leading-6 mb-6">
+          <h2 class="font-bold text-3xl">Apenas R$ 160,00 mensais</h2>
+          <p>Preço justo e acessível!</p>
+        </div>
+
+        <div class="mb-4 space-y-4">
+          <p>
+            O nosso programa é para atletas que desejam se destacar em todas as competições da temporada competitiva: CrossFit Open, quartas e semifinais da CrossFit, seletivas do TCB e TCB principal, Monstar Games e diversas outras competições internacionais (Fitland, Madrid CrossFit, Argentina ThrowDown, SouthFit Argentina, Elfit Egito).
+          </p>
+          <p>
+            É importante destacar que os qualifiers on-line exigem uma demanda de treinamento diferente quando comparado às competições presenciais. Isso significa que seu treinamento precisa ser direcionado para o seu objetivo.
+          </p>
+        </div>
+
+        <a href="" class="px-10 py-3 inline-flex border-2 border-black bg-black text-white font-bold hover:bg-transparent hover:text-black transition-all">Assinar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white py-2">
+    <div class="container flex items-center justify-center">
+      <a href="inline-flex">
+        <img src="assets/images/logo/icon-light.png" class="w-20 h-auto" alt="" />
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    let content = document.getElementById('test-offer');
+    let contentControl = document.getElementById('test-offer-control');
+
+    contentControl.addEventListener('click', function (event) {
+      content.classList.remove('right-3')
+      content.classList.add('right-0')
+      content.classList.add('translate-x-full')
+    });
+  </script>
+</body>
+</html>

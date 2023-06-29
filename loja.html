@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./assets/css/globals.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: '1rem',
+            }
+          },
+          fontFamily: {
+            'sans': ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            custom: {
+              100: '#E5E5E5',
+              200: '#FCB72E',
+              300: '#0B914A',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <nav class="bg-black text-white py-2">
+    <div class="container flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="">
+          <img src="assets/images/logo/icon-light.png" class="w-16 h-auto" alt="" />
+        </a>
+  
+        <ul class="flex items-center gap-5">
+          <li>
+            <a href="/" class="font-medium">Início</a>
+          </li>
+          <li>
+            <a href="/plano-individual.html" class="font-medium">Plano Individual</a>
+          </li>
+          <li>
+            <a href="/para-o-seu-box.html" class="font-medium">Para o seu Box</a>
+          </li>
+          <li>
+            <a href="/loja" class="font-medium">Nossos Produtos</a>
+          </li>
+          <li>
+            <a href="/blog" class="font-medium">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="flex items-center gap-5">
+        <li>
+          <a href="" class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            Carrinho
+          </a>
+        </li>
+        <li>
+          <a href="" class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+              <polyline points="10 17 15 12 10 7"></polyline>
+              <line x1="15" y1="12" x2="3" y2="12"></line>
+            </svg>
+            Minha conta
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="py-10">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="mb-2 text-2xl font-medium">Nossa loja</h2>
+        <p class="font-bold text-3xl md:text-4xl">Leve a Hércules Funcional com você!</p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-4 gap-16">
+        <div class="relative pb-10 bg-white shadow rounded-lg overflow-hidden">
+          <img src="./assets/images/camisa-feminina.jpeg" class="w-full h-auto" alt="">
+
+          <div class="p-5">
+            <div class="flex items-center justify-between">
+              <label class="text-sm text-gray-500">Vestuário</label>
+              <span>R$80,00</span>
+            </div>
+
+            <h3 class="mt-4 leading-5 font-bold text-center">Camisa de Treino Feminina</h3>
+
+            <a href="" class="mt-6 py-3 flex items-center justify-center bg-custom-200 font-bold absolute bottom-0 left-0 right-0">Ver produto</a>
+          </div>
+        </div>
+        <div class="relative pb-10 bg-white shadow rounded-lg overflow-hidden">
+          <img src="./assets/images/camisa-masculina.jpg" class="w-full h-auto" alt="">
+
+          <div class="p-5">
+            <div class="flex items-center justify-between">
+              <label class="text-sm text-gray-500">Vestuário</label>
+              <span>R$80,00</span>
+            </div>
+
+            <h3 class="mt-4 leading-5 font-bold text-center">Camisa de Treino Masculina</h3>
+
+            <a href="" class="mt-6 py-3 flex items-center justify-center bg-custom-200 font-bold absolute bottom-0 left-0 right-0">Ver produto</a>
+          </div>
+        </div>
+        <div class="relative pb-10 bg-white shadow rounded-lg overflow-hidden">
+          <img src="./assets/images/ebook.jpg" class="w-full h-auto" alt="">
+
+          <div class="p-5">
+            <div class="flex items-center justify-between">
+              <label class="text-sm text-gray-500">Ebook</label>
+              <span>R$87,00</span>
+            </div>
+
+            <h3 class="mt-4 leading-5 font-bold text-center">Livro Aspectos Básicos da Teoria e Da Metodologia do Treinamento Esportivo</h3>
+
+            <a href="" class="mt-6 py-3 flex items-center justify-center bg-custom-200 font-bold absolute bottom-0 left-0 right-0">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white py-2">
+    <div class="container flex items-center justify-center">
+      <a href="inline-flex">
+        <img src="assets/images/logo/icon-light.png" class="w-20 h-auto" alt="" />
+      </a>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+</html>

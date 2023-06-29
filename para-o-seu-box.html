@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./assets/css/globals.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: {
+            DEFAULT: '1rem',
+          }
+        },
+        extend: {
+          fontFamily: {
+            'sans': ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            custom: {
+              100: '#E5E5E5',
+              200: '#FCB72E',
+              300: '#0B914A',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <nav class="bg-black text-white py-2">
+    <div class="container flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <a href="">
+          <img src="assets/images/logo/icon-light.png" class="w-16 h-auto" alt="" />
+        </a>
+  
+        <ul class="flex items-center gap-5">
+          <li>
+            <a href="/" class="font-medium">Início</a>
+          </li>
+          <li>
+            <a href="/plano-individual.html" class="font-medium">Plano Individual</a>
+          </li>
+          <li>
+            <a href="/para-o-seu-box.html" class="font-medium">Para o seu Box</a>
+          </li>
+          <li>
+            <a href="/loja" class="font-medium">Nossos Produtos</a>
+          </li>
+          <li>
+            <a href="/blog" class="font-medium">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="flex items-center gap-5">
+        <li>
+          <a href="" class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            Carrinho
+          </a>
+        </li>
+        <li>
+          <a href="" class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+              <polyline points="10 17 15 12 10 7"></polyline>
+              <line x1="15" y1="12" x2="3" y2="12"></line>
+            </svg>
+            Minha conta
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="test-offer" class="fixed z-50 bottom-3 right-3 bg-custom-100 shadow-xl transition-all">
+    <div class="flex items-center gap-5">
+      <button class="p-3" id="test-offer-control">
+        <svg class="h-6 w-6 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <h2 class="px-2 font-medium">Experimente por 1 semana e ateste a eficácia da Hercules Funcional</h2>
+      <a href="" class="px-10 py-3 inline-flex bg-custom-200 font-bold">Baixar planilha grátis</a>
+    </div>
+  </section>
+
+  <section class="py-10 bg-custom-100">
+    <div class="container">
+
+      <div class="text-center">
+        <img src="./assets/images/logo/icon-dark.png" class="w-20 h-auto mx-auto" alt="">
+        <h1 class="mt-2 mb-2 font-bold text-3xl md:text-5xl">Affiliate Programming</h1>
+      </div>
+      <p class="md:w-1/2 mx-auto text-center font-medium text-lg md:text-2xl">Essa é a programação ideal para garantir treinos atrativos, funcionais e eficazes para seus alunos</p>
+      
+    </div>
+  </section>
+
+  <section class="relative">
+    <div class="relative z-10 bg-black bg-opacity-70 w-full h-full">
+      <div class="container py-20">
+
+        <h2 class="md:w-2/3 mx-auto mb-20 text-center text-white font-bold leading-11 text-3xl md:text-5xl">Por que escolher nossa programação para o seu box?</h2>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+          <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
+            <h2 class="mb-2 md:h-12 font-bold text-2xl leading-6">Economia de tempo</h2>
+            <p>
+              Ao terceirizar sua programação, você fica livre para trabalhar em outras áreas da sua empresa.
+            </p>
+          </div>
+          <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
+            <h2 class="mb-2 md:h-12 font-bold text-2xl leading-6">Exclusividade</h2>
+            <p>
+              Nós priorizamos os nossos primeiros parceiros: quer dizer que seu BOX será o único Hércules Functional da sua região!
+            </p>
+          </div>
+          <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
+            <h2 class="mb-2 md:h-12 font-bold text-2xl leading-6">Qualidade testada e aprovada</h2>
+            <p>
+              Nossa programação de treinamento é desenvolvida de acordo com as pesquisas mais recentes do treinamento desportivo e do Fitness Functional.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="/assets/images/hero.jpg" class="absolute t-0 left-0 right-0 bottom-0 w-full h-full object-cover object-fit" alt="">
+  </section>
+
+  <section class="py-10 bg-custom-100">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
+        <div>
+          <img src="/assets/images/about.jpg" class="w-full h-auto object-cover object-center" alt="">
+        </div>
+        <div class="text-center md:text-left">
+          <h2 class="mb-5 md:mb-10 font-bold text-xl md:text-4xl">Confira o que você recebe com o Affiliate Programming</h2>
+
+          <ul class="md:list-disc space-y-2 md:text-lg">
+            <li>Programação de treinos 6 dias/semana: treinos de segunda a sábado</li>
+            <li>Semana completa de treinos: enviamos a planilha aos domingos</li>
+            <li>Aulas sem suposições: todos os detalhes diários estão junto à planilha</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 bg-custom-100">
+    <div class="container">
+      <div class="text-center mb-10">
+        <h2 class="mb-2 font-bold text-4xl md:text-5xl">Box Afiliados</h2>
+        <p class="text-center font-medium text-lg md:text-2xl leading-5 md:leading-7">Em todo o Brasil temos afiliados usando nosso método</p>
+      </div>
+
+      <div class="border-2 border-slate-300">
+        <div>
+          <input type="radio" name="region" class="peer hidden" id="norte" checked>
+          <label for="norte" class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
+            Norte
+          </label>
+          <div class="h-0 peer-checked:h-auto peer-checked:p-5 overflow-hidden transition-all space-y-5">
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Pará</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Cross One Box Treinamento Funcional</h4>
+                  <address class="not-italic">Folha 31, QD 08 LT 28, próximo a, Praça da Prefeitura – Nova Marabá, Marabá – PA, 68507-600</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">Replay Academia</h4>
+                  <address class="not-italic">Folha 31, QD 08 LT 28, próximo a, Praça da Prefeitura – Nova Marabá, Marabá – PA, 68507-600</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">The Box Cross Training</h4>
+                  <address class="not-italic">Av. Pref. Benedito Rocha – Centro, Conceição do Araguaia – PA, 68540-000</address>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Tocantins</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Recovery Cross Team</h4>
+                  <address class="not-italic">Quadra 802 Sul Alameda 01Lote 11 – Plano Diretor Sul, Palmas – TO, 77023-005</address>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input type="radio" name="region" class="peer hidden" id="nordeste">
+          <label for="nordeste" class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
+            Nordeste
+          </label>
+          <div class="h-0 peer-checked:h-auto peer-checked:p-5 overflow-hidden transition-all space-y-5">
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Alagoas</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">CrossFit Pajuçara</h4>
+                  <address class="not-italic">R. Jangadeiros Alagoanos, 942 – Pajuçara, Maceió – AL, 57030-000</address>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Bahia</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">CrossFit 889</h4>
+                  <address class="not-italic">Rua Marechal Hermes, 569, Loteamento Milena e Primavera Quadraa e L Lote 04 e 14. Renato Gonçalves, Barreiras – BA</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">CF Império</h4>
+                  <address class="not-italic">R. Danilo Guerra, 39 – Jardim Imperial, Luís Eduardo Magalhães – BA, 47850-000</address>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Pernambuco</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Republic Academia</h4>
+                  <address class="not-italic">R. Maestro Alexandre, 159 – Nova Santa Cruz, Santa Cruz do Capibaribe – PE, 55194-321</address>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Rio Grande do Norte</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Box Tirol</h4>
+                  <address class="not-italic">Av. Afonso Pena, 807 – Tirol, Natal – RN, 59020-100</address>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input type="radio" name="region" class="peer hidden" id="centro-oeste">
+          <label for="centro-oeste" class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
+            Centro-oeste
+          </label>
+          <div class="h-0 peer-checked:h-auto peer-checked:p-5 overflow-hidden transition-all space-y-5">
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Brasília</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Hércules Training</h4>
+                  <address class="not-italic">St. de Clubes Esportivos Sul Trecho 2 – Brasília, DF, 70297-400</address>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Goiás</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Black Bear CF</h4>
+                  <address class="not-italic">Av. Onofre de Andrade, R. Santa Rita, 19 – Qd.381 Lt, Pontalina – GO, 75620-000</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">Titan CT</h4>
+                  <address class="not-italic">R. Ferroviário Braulino dos Reis, Qd. 10 – Lt. 35 – Vila Industrial, Anápolis – GO, 75115-050</address>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Mato Grosso</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Step Box</h4>
+                  <address class="not-italic">R. Célso Rosa Lima (26), 68-N – Centro, Tangará da Serra – MT, 78300-120</address>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input type="radio" name="region" class="peer hidden" id="sudeste">
+          <label for="sudeste" class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
+            Sudeste
+          </label>
+          <div class="h-0 peer-checked:h-auto peer-checked:p-5 overflow-hidden transition-all space-y-5">
+            <div>
+              <h3 class="font-bold mb-2 text-lg">São Paulo</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Box Koru</h4>
+                  <address class="not-italic">Rua Ferdinando Biagioni nº 1850. Araraquara – SP, 14802-170</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">Box BLM</h4>
+                  <address class="not-italic">R. Alice Além Saadi, 171 – Nova Ribeirânia, Ribeirão Preto – SP, 14096-570</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">Crown Campinas</h4>
+                  <address class="not-italic">R. Jorge de Figueiredo Corrêa, 1627 B – Chácara Primavera, Campinas – SP, 13087-490</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">Domvs Romana Força e Condicionamento</h4>
+                  <address class="not-italic">R. Catão, 594 – Vila Romana, São Paulo – SP, 05051-030</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">CT Nauru</h4>
+                  <address class="not-italic">R. Angelino Francisco Gianasi, 20 – Santana, Ribeirão Pires – SP, 09407-030</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">CPBox</h4>
+                  <address class="not-italic">Av. Cidade Jardim, numero 460 – Jardim Satélite, São José dos Campos – SP, 12231-675</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">Power Body CF</h4>
+                  <address class="not-italic">Av. Paulo Emanuel de Almeida, 513 – Wanel Ville, Sorocaba – SP, 18053-505</address>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Minas Gerais</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Caverna Fitness</h4>
+                  <address class="not-italic">Rua Lincoln Byrro, 64 – Vila Bretas, Gov. Valadares – MG, 35032-610</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">Huios Cross</h4>
+                  <address class="not-italic">Bairro Retiro, Avenida Dos Retirantes, 707 / Contagem – MG, 32050-370</address>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Rio de Janeiro</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Crown São Conrado</h4>
+                  <address class="not-italic">Estrada da Gávea 656, 226100-02</address>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input type="radio" name="region" class="peer hidden" id="sul">
+          <label for="sul" class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
+            Sul
+          </label>
+          <div class="h-0 peer-checked:h-auto peer-checked:p-5 overflow-hidden transition-all space-y-5">
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Paraná</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">Montano Fitness & Performance</h4>
+                  <address class="not-italic">R. Dr. Manoel Linhares de Lacerda, 447 – Capão Raso, Curitiba – PR, 81110-100</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">Apollyon CrossFit</h4>
+                  <address class="not-italic">R. Comendador Miró, 698 – Centro, Ponta Grossa – PR, 84010-160</address>
+                </li>
+                
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2 text-lg">Santa Catarina</h3>
+              <ul class="space-y-2">
+                <li>
+                  <h4 class="font-medium">WodHaus Crosstraining</h4>
+                  <address class="not-italic">R. Adolfo Karsten, 111 – Velha, Blumenau – SC, 89041-110</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">Vital Cross</h4>
+                  <address class="not-italic">R. Teresa Cristina, 228 – Oficinas, Tubarão – SC, 88702-010</address>
+                </li>
+                <li>
+                  <h4 class="font-medium">Box Vinte7</h4>
+                  <address class="not-italic"> R. Anastácio João de Souza, 514 – Urussanguinha, Araranguá – SC, 88900-000</address>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white py-2">
+    <div class="container flex items-center justify-center">
+      <a href="inline-flex">
+        <img src="assets/images/logo/icon-light.png" class="w-20 h-auto" alt="" />
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    let content = document.getElementById('test-offer');
+    let contentControl = document.getElementById('test-offer-control');
+
+    contentControl.addEventListener('click', function (event) {
+      content.classList.remove('right-3')
+      content.classList.add('right-0')
+      content.classList.add('translate-x-full')
+    });
+  </script>
+</body>
+</html>
