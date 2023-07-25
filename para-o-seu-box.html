@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
 
   <link rel="stylesheet" href="./assets/css/globals.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -16,6 +17,10 @@
           center: true,
           padding: {
             DEFAULT: '1rem',
+            sm: '2rem',
+            lg: '4rem',
+            xl: '5rem',
+            '2xl': '6rem',
           }
         },
         extend: {
@@ -34,68 +39,78 @@
     }
   </script>
 </head>
+
 <body>
-  <nav class="bg-black text-white py-2">
-    <div class="container flex items-center justify-between">
-      <div class="flex items-center gap-10">
+  <nav class="w-full px-4 py-4 bg-black text-white">
+    <div class="container flex flex-wrap items-center justify-between">
+      <div>
         <a href="">
           <img src="assets/images/logo/icon-light.png" class="w-16 h-auto" alt="" />
         </a>
-  
-        <ul class="flex items-center gap-5">
-          <li>
-            <a href="/" class="font-medium">Início</a>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer xl:hidden block text-white"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+
+      <div class="hidden w-full xl:flex xl:items-center xl:w-auto" id="menu">
+        <ul class="pt-4 text-base text-white xl:flex xl:justify-between  xl:pt-0">
+          <li class="py-2 xl:p-4 block">
+            <a href="/" class="font-medium hover:text-yellow-500">Início</a>
           </li>
-          <li>
-            <a href="/plano-individual.html" class="font-medium">Plano Individual</a>
+          <li class="py-2 xl:p-4 block">
+            <a href="/plano-individual.html" class="font-medium hover:text-yellow-500">Plano Individual</a>
           </li>
-          <li>
-            <a href="/para-o-seu-box.html" class="font-medium">Para o seu Box</a>
+          <li class="py-2 xl:p-4 block">
+            <a href="/para-o-seu-box.html" class="font-medium hover:text-yellow-500">Para o seu Box</a>
           </li>
-          <li>
-            <a href="/loja.html" class="font-medium">Nossos Produtos</a>
+          <li class="py-2 xl:p-4 block">
+            <a href="/loja.html" class="font-medium hover:text-yellow-500">Nossos Produtos</a>
           </li>
-          <li>
-            <a href="/blog.html" class="font-medium">Blog</a>
+          <li class="py-2 xl:p-4 block">
+            <a href="/blog.html" class="font-medium hover:text-yellow-500">Conteúdo</a>
+          </li>
+          <li class="py-2 xl:p-4 block">
+            <a href="" class="inline-flex items-center gap-2 font-medium hover:text-yellow-500">
+              <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              Carrinho
+            </a>
+          </li>
+          <li class="py-2 xl:p-4 block">
+            <a href="" class="inline-flex items-center gap-2 font-medium hover:text-yellow-500">
+              <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                <polyline points="10 17 15 12 10 7"></polyline>
+                <line x1="15" y1="12" x2="3" y2="12"></line>
+              </svg>
+              Minha conta
+            </a>
           </li>
         </ul>
       </div>
-
-      <ul class="flex items-center gap-5">
-        <li>
-          <a href="" class="inline-flex items-center gap-2">
-            <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="9" cy="21" r="1"></circle>
-              <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-            </svg>
-            Carrinho
-          </a>
-        </li>
-        <li>
-          <a href="" class="inline-flex items-center gap-2">
-            <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-              <polyline points="10 17 15 12 10 7"></polyline>
-              <line x1="15" y1="12" x2="3" y2="12"></line>
-            </svg>
-            Minha conta
-          </a>
-        </li>
-      </ul>
     </div>
   </nav>
 
-  <section id="test-offer" class="fixed z-50 bottom-3 right-3 bg-custom-100 shadow-xl transition-all">
+  <section id="test-offer" class="fixed z-50 bottom-3 right-3 py-4 px-2 lg:p-0 bg-white shadow-xl transition-all">
     <div class="flex items-center gap-5">
       <button class="p-3" id="test-offer-control">
-        <svg class="h-6 w-6 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <svg class="h-6 w-6 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round"
+          stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
       </button>
-      <h2 class="px-2 font-medium">Experimente por 1 semana e ateste a eficácia da Hercules Funcional</h2>
-      <a href="" class="px-10 py-3 inline-flex bg-custom-200 font-bold">Baixar planilha grátis</a>
+      <div class="flex flex-col lg:flex-row lg:items-center gap-2">
+        <h2 class="px-2 font-medium text-sm md:text-lg text-center">Experimente por 1 semana e ateste a eficácia da Hercules Funcional</h2>
+        <a href="" class="px-10 py-3 inline-flex justify-center bg-custom-200 font-bold text-sm lg:text-base">Baixar planilha grátis</a>
+      </div>
     </div>
   </section>
 
@@ -106,8 +121,9 @@
         <img src="./assets/images/logo/icon-dark.png" class="w-20 h-auto mx-auto" alt="">
         <h1 class="mt-2 mb-2 font-bold text-3xl md:text-5xl">Affiliate Programming</h1>
       </div>
-      <p class="md:w-1/2 mx-auto text-center font-medium text-lg md:text-2xl">Essa é a programação ideal para garantir treinos atrativos, funcionais e eficazes para seus alunos</p>
-      
+      <p class="lg:w-1/2 mx-auto text-center font-medium text-lg md:text-2xl">Essa é a programação ideal para garantir
+        treinos atrativos, funcionais e eficazes para seus alunos</p>
+
     </div>
   </section>
 
@@ -115,9 +131,10 @@
     <div class="relative z-10 bg-black bg-opacity-70 w-full h-full">
       <div class="container py-20">
 
-        <h2 class="md:w-2/3 mx-auto mb-20 text-center text-white font-bold leading-11 text-3xl md:text-5xl">Por que escolher nossa programação para o seu box?</h2>
+        <h2 class="lg:w-2/3 mx-auto mb-20 text-center text-white font-bold leading-11 text-3xl md:text-5xl">Por que
+          escolher nossa programação para o seu box?</h2>
 
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:place gap-10 text-center">
           <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
             <h2 class="mb-2 md:h-12 font-bold text-2xl leading-6">Economia de tempo</h2>
             <p>
@@ -127,30 +144,34 @@
           <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
             <h2 class="mb-2 md:h-12 font-bold text-2xl leading-6">Exclusividade</h2>
             <p>
-              Nós priorizamos os nossos primeiros parceiros: quer dizer que seu BOX será o único Hércules Functional da sua região!
+              Nós priorizamos os nossos primeiros parceiros: quer dizer que seu BOX será o único Hércules Functional da
+              sua região!
             </p>
           </div>
           <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
             <h2 class="mb-2 md:h-12 font-bold text-2xl leading-6">Qualidade testada e aprovada</h2>
             <p>
-              Nossa programação de treinamento é desenvolvida de acordo com as pesquisas mais recentes do treinamento desportivo e do Fitness Functional.
+              Nossa programação de treinamento é desenvolvida de acordo com as pesquisas mais recentes do treinamento
+              desportivo e do Fitness Functional.
             </p>
           </div>
         </div>
 
       </div>
     </div>
-    <img src="/assets/images/hero.jpg" class="absolute t-0 left-0 right-0 bottom-0 w-full h-full object-cover object-fit" alt="">
+    <img src="/assets/images/hero.jpg"
+      class="absolute t-0 left-0 right-0 bottom-0 w-full h-full object-cover object-fit" alt="">
   </section>
 
   <section class="py-10 bg-custom-100">
     <div class="container">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-center">
         <div>
           <img src="/assets/images/about.jpg" class="w-full h-auto object-cover object-center" alt="">
         </div>
         <div class="text-center md:text-left">
-          <h2 class="mb-5 md:mb-10 font-bold text-xl md:text-4xl">Confira o que você recebe com o Affiliate Programming</h2>
+          <h2 class="mb-5 md:mb-10 font-bold text-xl md:text-4xl">Confira o que você recebe com o Affiliate Programming
+          </h2>
 
           <ul class="md:list-disc space-y-2 md:text-lg">
             <li>Programação de treinos 6 dias/semana: treinos de segunda a sábado</li>
@@ -166,13 +187,15 @@
     <div class="container">
       <div class="text-center mb-10">
         <h2 class="mb-2 font-bold text-4xl md:text-5xl">Box Afiliados</h2>
-        <p class="text-center font-medium text-lg md:text-2xl leading-5 md:leading-7">Em todo o Brasil temos afiliados usando nosso método</p>
+        <p class="text-center font-medium text-lg md:text-2xl leading-5 md:leading-7">Em todo o Brasil temos afiliados
+          usando nosso método</p>
       </div>
 
       <div class="border-2 border-slate-300">
         <div>
           <input type="radio" name="region" class="peer hidden" id="norte" checked>
-          <label for="norte" class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
+          <label for="norte"
+            class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
             Norte
           </label>
           <div class="h-0 peer-checked:h-auto peer-checked:p-5 overflow-hidden transition-all space-y-5">
@@ -181,15 +204,18 @@
               <ul class="space-y-2">
                 <li>
                   <h4 class="font-medium">Cross One Box Treinamento Funcional</h4>
-                  <address class="not-italic">Folha 31, QD 08 LT 28, próximo a, Praça da Prefeitura – Nova Marabá, Marabá – PA, 68507-600</address>
+                  <address class="not-italic">Folha 31, QD 08 LT 28, próximo a, Praça da Prefeitura – Nova Marabá,
+                    Marabá – PA, 68507-600</address>
                 </li>
                 <li>
                   <h4 class="font-medium">Replay Academia</h4>
-                  <address class="not-italic">Folha 31, QD 08 LT 28, próximo a, Praça da Prefeitura – Nova Marabá, Marabá – PA, 68507-600</address>
+                  <address class="not-italic">Folha 31, QD 08 LT 28, próximo a, Praça da Prefeitura – Nova Marabá,
+                    Marabá – PA, 68507-600</address>
                 </li>
                 <li>
                   <h4 class="font-medium">The Box Cross Training</h4>
-                  <address class="not-italic">Av. Pref. Benedito Rocha – Centro, Conceição do Araguaia – PA, 68540-000</address>
+                  <address class="not-italic">Av. Pref. Benedito Rocha – Centro, Conceição do Araguaia – PA, 68540-000
+                  </address>
                 </li>
               </ul>
             </div>
@@ -198,7 +224,8 @@
               <ul class="space-y-2">
                 <li>
                   <h4 class="font-medium">Recovery Cross Team</h4>
-                  <address class="not-italic">Quadra 802 Sul Alameda 01Lote 11 – Plano Diretor Sul, Palmas – TO, 77023-005</address>
+                  <address class="not-italic">Quadra 802 Sul Alameda 01Lote 11 – Plano Diretor Sul, Palmas – TO,
+                    77023-005</address>
                 </li>
               </ul>
             </div>
@@ -206,7 +233,8 @@
         </div>
         <div>
           <input type="radio" name="region" class="peer hidden" id="nordeste">
-          <label for="nordeste" class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
+          <label for="nordeste"
+            class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
             Nordeste
           </label>
           <div class="h-0 peer-checked:h-auto peer-checked:p-5 overflow-hidden transition-all space-y-5">
@@ -224,11 +252,13 @@
               <ul class="space-y-2">
                 <li>
                   <h4 class="font-medium">CrossFit 889</h4>
-                  <address class="not-italic">Rua Marechal Hermes, 569, Loteamento Milena e Primavera Quadraa e L Lote 04 e 14. Renato Gonçalves, Barreiras – BA</address>
+                  <address class="not-italic">Rua Marechal Hermes, 569, Loteamento Milena e Primavera Quadraa e L Lote
+                    04 e 14. Renato Gonçalves, Barreiras – BA</address>
                 </li>
                 <li>
                   <h4 class="font-medium">CF Império</h4>
-                  <address class="not-italic">R. Danilo Guerra, 39 – Jardim Imperial, Luís Eduardo Magalhães – BA, 47850-000</address>
+                  <address class="not-italic">R. Danilo Guerra, 39 – Jardim Imperial, Luís Eduardo Magalhães – BA,
+                    47850-000</address>
                 </li>
               </ul>
             </div>
@@ -237,7 +267,8 @@
               <ul class="space-y-2">
                 <li>
                   <h4 class="font-medium">Republic Academia</h4>
-                  <address class="not-italic">R. Maestro Alexandre, 159 – Nova Santa Cruz, Santa Cruz do Capibaribe – PE, 55194-321</address>
+                  <address class="not-italic">R. Maestro Alexandre, 159 – Nova Santa Cruz, Santa Cruz do Capibaribe –
+                    PE, 55194-321</address>
                 </li>
               </ul>
             </div>
@@ -254,7 +285,8 @@
         </div>
         <div>
           <input type="radio" name="region" class="peer hidden" id="centro-oeste">
-          <label for="centro-oeste" class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
+          <label for="centro-oeste"
+            class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
             Centro-oeste
           </label>
           <div class="h-0 peer-checked:h-auto peer-checked:p-5 overflow-hidden transition-all space-y-5">
@@ -272,11 +304,13 @@
               <ul class="space-y-2">
                 <li>
                   <h4 class="font-medium">Black Bear CF</h4>
-                  <address class="not-italic">Av. Onofre de Andrade, R. Santa Rita, 19 – Qd.381 Lt, Pontalina – GO, 75620-000</address>
+                  <address class="not-italic">Av. Onofre de Andrade, R. Santa Rita, 19 – Qd.381 Lt, Pontalina – GO,
+                    75620-000</address>
                 </li>
                 <li>
                   <h4 class="font-medium">Titan CT</h4>
-                  <address class="not-italic">R. Ferroviário Braulino dos Reis, Qd. 10 – Lt. 35 – Vila Industrial, Anápolis – GO, 75115-050</address>
+                  <address class="not-italic">R. Ferroviário Braulino dos Reis, Qd. 10 – Lt. 35 – Vila Industrial,
+                    Anápolis – GO, 75115-050</address>
                 </li>
               </ul>
             </div>
@@ -285,7 +319,8 @@
               <ul class="space-y-2">
                 <li>
                   <h4 class="font-medium">Step Box</h4>
-                  <address class="not-italic">R. Célso Rosa Lima (26), 68-N – Centro, Tangará da Serra – MT, 78300-120</address>
+                  <address class="not-italic">R. Célso Rosa Lima (26), 68-N – Centro, Tangará da Serra – MT, 78300-120
+                  </address>
                 </li>
               </ul>
             </div>
@@ -293,7 +328,8 @@
         </div>
         <div>
           <input type="radio" name="region" class="peer hidden" id="sudeste">
-          <label for="sudeste" class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
+          <label for="sudeste"
+            class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
             Sudeste
           </label>
           <div class="h-0 peer-checked:h-auto peer-checked:p-5 overflow-hidden transition-all space-y-5">
@@ -306,11 +342,13 @@
                 </li>
                 <li>
                   <h4 class="font-medium">Box BLM</h4>
-                  <address class="not-italic">R. Alice Além Saadi, 171 – Nova Ribeirânia, Ribeirão Preto – SP, 14096-570</address>
+                  <address class="not-italic">R. Alice Além Saadi, 171 – Nova Ribeirânia, Ribeirão Preto – SP, 14096-570
+                  </address>
                 </li>
                 <li>
                   <h4 class="font-medium">Crown Campinas</h4>
-                  <address class="not-italic">R. Jorge de Figueiredo Corrêa, 1627 B – Chácara Primavera, Campinas – SP, 13087-490</address>
+                  <address class="not-italic">R. Jorge de Figueiredo Corrêa, 1627 B – Chácara Primavera, Campinas – SP,
+                    13087-490</address>
                 </li>
                 <li>
                   <h4 class="font-medium">Domvs Romana Força e Condicionamento</h4>
@@ -318,15 +356,18 @@
                 </li>
                 <li>
                   <h4 class="font-medium">CT Nauru</h4>
-                  <address class="not-italic">R. Angelino Francisco Gianasi, 20 – Santana, Ribeirão Pires – SP, 09407-030</address>
+                  <address class="not-italic">R. Angelino Francisco Gianasi, 20 – Santana, Ribeirão Pires – SP,
+                    09407-030</address>
                 </li>
                 <li>
                   <h4 class="font-medium">CPBox</h4>
-                  <address class="not-italic">Av. Cidade Jardim, numero 460 – Jardim Satélite, São José dos Campos – SP, 12231-675</address>
+                  <address class="not-italic">Av. Cidade Jardim, numero 460 – Jardim Satélite, São José dos Campos – SP,
+                    12231-675</address>
                 </li>
                 <li>
                   <h4 class="font-medium">Power Body CF</h4>
-                  <address class="not-italic">Av. Paulo Emanuel de Almeida, 513 – Wanel Ville, Sorocaba – SP, 18053-505</address>
+                  <address class="not-italic">Av. Paulo Emanuel de Almeida, 513 – Wanel Ville, Sorocaba – SP, 18053-505
+                  </address>
                 </li>
               </ul>
             </div>
@@ -335,11 +376,13 @@
               <ul class="space-y-2">
                 <li>
                   <h4 class="font-medium">Caverna Fitness</h4>
-                  <address class="not-italic">Rua Lincoln Byrro, 64 – Vila Bretas, Gov. Valadares – MG, 35032-610</address>
+                  <address class="not-italic">Rua Lincoln Byrro, 64 – Vila Bretas, Gov. Valadares – MG, 35032-610
+                  </address>
                 </li>
                 <li>
                   <h4 class="font-medium">Huios Cross</h4>
-                  <address class="not-italic">Bairro Retiro, Avenida Dos Retirantes, 707 / Contagem – MG, 32050-370</address>
+                  <address class="not-italic">Bairro Retiro, Avenida Dos Retirantes, 707 / Contagem – MG, 32050-370
+                  </address>
                 </li>
               </ul>
             </div>
@@ -356,7 +399,8 @@
         </div>
         <div>
           <input type="radio" name="region" class="peer hidden" id="sul">
-          <label for="sul" class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
+          <label for="sul"
+            class="px-5 py-2 block bg-white font-bold text-3xl cursor-pointer peer-checked:bg-custom-200 peer-checked:shadow peer-checked:text-white">
             Sul
           </label>
           <div class="h-0 peer-checked:h-auto peer-checked:p-5 overflow-hidden transition-all space-y-5">
@@ -365,13 +409,14 @@
               <ul class="space-y-2">
                 <li>
                   <h4 class="font-medium">Montano Fitness & Performance</h4>
-                  <address class="not-italic">R. Dr. Manoel Linhares de Lacerda, 447 – Capão Raso, Curitiba – PR, 81110-100</address>
+                  <address class="not-italic">R. Dr. Manoel Linhares de Lacerda, 447 – Capão Raso, Curitiba – PR,
+                    81110-100</address>
                 </li>
                 <li>
                   <h4 class="font-medium">Apollyon CrossFit</h4>
                   <address class="not-italic">R. Comendador Miró, 698 – Centro, Ponta Grossa – PR, 84010-160</address>
                 </li>
-                
+
               </ul>
             </div>
             <div>
@@ -387,7 +432,8 @@
                 </li>
                 <li>
                   <h4 class="font-medium">Box Vinte7</h4>
-                  <address class="not-italic"> R. Anastácio João de Souza, 514 – Urussanguinha, Araranguá – SC, 88900-000</address>
+                  <address class="not-italic"> R. Anastácio João de Souza, 514 – Urussanguinha, Araranguá – SC,
+                    88900-000</address>
                 </li>
               </ul>
             </div>
@@ -398,10 +444,43 @@
   </section>
 
   <footer class="bg-black text-white py-2">
-    <div class="container flex items-center justify-center">
-      <a href="inline-flex">
+    <div class="container flex flex-col items-center justify-center gap-5">
+      <a href="">
         <img src="assets/images/logo/icon-light.png" class="w-20 h-auto" alt="" />
       </a>
+
+      <ul class="flex gap-x-4 text-2xl">
+        <li>
+          <a href="">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+              </path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+              </path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z">
+              </path>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </footer>
 
@@ -416,4 +495,5 @@
     });
   </script>
 </body>
+
 </html>

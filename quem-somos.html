@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="../assets/css/globals.css">
+  <link rel="stylesheet" href="./assets/css/globals.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -37,14 +38,15 @@
       }
     }
   </script>
-</head>
-<body>
 
+</head>
+
+<body class="bg-custom-100">
   <nav class="w-full px-4 py-4 bg-black text-white">
     <div class="container flex flex-wrap items-center justify-between">
       <div>
         <a href="">
-          <img src="../assets/images/logo/icon-light.png" class="w-16 h-auto" alt="" />
+          <img src="assets/images/logo/icon-light.png" class="w-16 h-auto" alt="" />
         </a>
       </div>
 
@@ -59,66 +61,99 @@
             <a href="/" class="font-medium hover:text-yellow-500">Início</a>
           </li>
           <li class="py-2 xl:p-4 block">
-            <a href="/" class="font-medium hover:text-yellow-500">Quem somos</a>
-          </li>
-          <li class="py-2 xl:p-4 block">
             <a href="/plano-individual.html" class="font-medium hover:text-yellow-500">Plano Individual</a>
           </li>
           <li class="py-2 xl:p-4 block">
             <a href="/para-o-seu-box.html" class="font-medium hover:text-yellow-500">Para o seu Box</a>
           </li>
           <li class="py-2 xl:p-4 block">
-            <a href="/blog.html" class="font-medium hover:text-yellow-500">Blog</a>
+            <a href="/loja.html" class="font-medium hover:text-yellow-500">Nossos Produtos</a>
           </li>
           <li class="py-2 xl:p-4 block">
-            <a href="/loja.html" class="font-bold border-2 px-8 py-2 bg-yellow-500 rounded-md border-yellow-500 text-black hover:bg-transparent hover:text-yellow-500">Loja</a>
+            <a href="/blog.html" class="font-medium hover:text-yellow-500">Conteúdo</a>
+          </li>
+          <li class="py-2 xl:p-4 block">
+            <a href="" class="inline-flex items-center gap-2 font-medium hover:text-yellow-500">
+              <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              Carrinho
+            </a>
+          </li>
+          <li class="py-2 xl:p-4 block">
+            <a href="" class="inline-flex items-center gap-2 font-medium hover:text-yellow-500">
+              <svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                <polyline points="10 17 15 12 10 7"></polyline>
+                <line x1="15" y1="12" x2="3" y2="12"></line>
+              </svg>
+              Minha conta
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="py-10">
-    <div class="container">
-      <div class="text-center">
-        <h1 class="mb-2 font-medium text-xl md:text-2xl">Treinamento Desportivo</h1>
-        <p class="font-bold text-2xl md:text-4xl">Destreinamento – Parte 1</p>
+  <section class="py-10 overflow-hidden">
+    <div class="container relative">
+      <svg class="w-1/2 h-auto -z-10 absolute top-0 left-1/2 -translate-x-1/2 fill-none opacity-30"
+        viewBox="0 0 856 988" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M725.3 418.4V665.6L428 837.3L130.7 665.6V322.4L386.6 174.6L301.1 572.7L456.2 551.5L428 731.4L607.9 417.5L477.4 431.6L555 224L601.3 100.1L574.8 84.8L428 0L0.200195 247V741L428 988L855.8 741V446.2L725.3 418.4Z"
+          fill="#CACACA" />
+        <path d="M725.3 322.7V418.4L855.8 446.2V248.2L725.3 322.7Z" fill="#CACACA" />
+        <path d="M725.3 322.4V322.7L855.8 248.2V247L685 148.4L638.6 272.3L725.3 322.4Z" fill="#CACACA" />
+      </svg>
+
+      <div class="mb-16 text-center">
+        <h2 class="mb-2 font-bold text-3xl lg:text-5xl">Conheça o Hércules Functional</h2>
+        <p class="lg:text-lg">Treinos completos para atletas que buscam alta performance em functional fitness</p>
       </div>
 
-      <img src="../assets/images/athletes/pedro-egito.jpeg" class="w-full md:w-1/2 h-40 md:h-60 mx-auto mt-10 object-cover object-center rounded-xl" alt="">
-
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div class="md:col-span-2">
-          <p>
-            Segundo Issurin (2010), o conceito de blocos de treinamento surgiu como uma alternativa ao modelo tradicional proposto por Matveev. 
-            Em sua definição mais ampla, a periodização em bloco se refere a um ciclo de treinamento com cargas de trabalho altamente concentradas 
-            e especializadas. Issurin (2010) destaca que os princípios gerais propostos conduzem à uma classificação de blocos de mesociclos que 
-            atenda às necessidades práticas da elaboração de programas de treinamento. A classificação dos blocos de mesociclos é composta por três 
-            tipos especializados: acumulação, transmutação e realização. O primeiro tipo se concentra no desenvolvimento das habilidades básicas do 
-            esporte, enquanto que no Fitness Funcional seria o foco no desenvolvimento da hipertrofia, força/potência e resistência aeróbia geral. 
-            Este mesociclo é caracterizado por um volume relativamente alto. O segundo tipo se concentra nas habilidades específicas da competição 
-            alvo (por exemplo, Copa Sur CrossFit). O terceiro tipo visa restaurar os atletas e prepará-los para a competição, com exercícios para 
-            modelar o desempenho competitivo e a aplicação do tapering que pode durar entre 8 a 15 dias. Esses três blocos de mesociclos formam um 
-            estágio de treinamento único que é concluído ou não com uma competição específica.
-          </p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-32 items-center">
+        <div>
+          <img src="./assets/images/about.jpg" class="w-full h-auto block rounded-lg object-fit object-center" alt="">
         </div>
-        <div class="md:border-l-2 md:border-custom-200 px-5 md:px-10">
-            <h2 class="font-bold text-2xl text-center">Últimas publicações</h2>
-          
-            <div class="mt-5">
-              <a href="/blog/destreinamento.html">
-                <div class="border p-4">
-                  <h3 class="font-medium">Destreinamento – Parte 1</h3>
-                  <p class="my-2 text-sm">O que acontece quando paramos de treinar por um período prolongado</p>
-                  <p class="text-sm text-slate-400 flex items-center justify-between">
-                    <span>26/06/2023</span>
-                    <span>Por Ramires A. Tibana</span>
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
+        <div class="text-center lg:text-left">
+          <h3 class="mb-4 font-bold text-2xl lg:text-3xl">Apoiado pela ciência. Conduzidos pela paixão. Adaptado para
+            você.</h3>
+          <p class="mb-6">O Hércules Functional é um programa de treinamento que busca a alta qualidade e se utiliza de
+            ferramentas que permitem a individualização dos programas de treinamento com o objetivo de aumentar a
+            performance física dos praticantes do Functional Fitness.</p>
+          <a href="" class="px-10 py-3 inline-flex bg-custom-200 font-bold">Conheça nossos planos</a>
+        </div>
       </div>
+
+      <div class="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div class="lg:order-1">
+          <img src="./assets/images/athletes/goleonn.jpg" class="w-full h-auto rounded-lg" alt="">
+        </div>
+        <div class="font-medium text-center lg:text-left">
+          <div class="leading-6 mb-6">
+            <p>Conheça nosso especialista</p>
+            <h2 class="font-bold text-3xl">Ramires Tibana</h2>
+          </div>
+  
+          <div class="mb-4 space-y-4">
+            <p>
+              Doutor em Educação Física e pesquisador pela Universidade Federal do Mato Grosso, Ramires A. Tibana conta com uma extensa formação acadêmica em Educação Física, com certificados que incluem a Universidade Católica de Brasília, Western Kentucky University, Universidade de Nevada, além de mais de 120 artigos científicos publicados em periódicos internacionais.
+            </p>
+            <p>
+              Confira o currículo Lattes completo do Professor Ramires para saber mais sobre suas pesquisas e formação na área.
+            </p>
+          </div>
+  
+          <a href="" class="px-10 py-3 inline-flex border-2 border-black bg-black text-white font-bold hover:bg-transparent hover:text-black transition-all">Lattes</a>
+        </div>
+      </div>
+
+      <p class="lg:w-1/2 my-16 mx-auto text-center text-xl">Acreditamos que o treinamento bem estruturado é a base para
+        o sucesso do atleta: e queremos levar essa metodologia para seus treinos e seu BOX.</p>
     </div>
   </section>
 
@@ -162,7 +197,38 @@
       </ul>
     </div>
   </footer>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+
+
+    button.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    var mainSwiper = new Swiper(".mainSwiper", {
+      spaceBetween: 30,
+      slidesPerView: 1
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      breakpoints: {
+        0: {
+          slidesPerView: 1
+        },
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        },
+      }
+    });
+  </script>
+  <script src="./assets/js/globals.js"></script>
 </body>
+
 </html>
