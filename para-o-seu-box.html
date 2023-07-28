@@ -79,22 +79,6 @@
     </div>
   </nav>
 
-  <section id="test-offer" class="fixed z-50 bottom-3 right-3 py-4 px-2 lg:p-0 bg-white shadow-xl transition-all">
-    <div class="flex items-center gap-5">
-      <button class="p-3" id="test-offer-control">
-        <svg class="h-6 w-6 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round"
-          stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-      <div class="flex flex-col lg:flex-row lg:items-center gap-2">
-        <h2 class="px-2 font-medium text-sm md:text-lg text-center">Experimente por 1 semana e ateste a eficácia da Hercules Funcional</h2>
-        <a href="" class="px-10 py-3 inline-flex justify-center bg-custom-200 font-bold text-sm lg:text-base">Baixar planilha grátis</a>
-      </div>
-    </div>
-  </section>
-
   <section class="py-10 bg-custom-100">
     <div class="container">
 
@@ -478,17 +462,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    let content = document.getElementById('test-offer');
-    let contentControl = document.getElementById('test-offer-control');
-
-    contentControl.addEventListener('click', function (event) {
-      content.classList.remove('right-3')
-      content.classList.add('right-0')
-      content.classList.add('translate-x-full')
-    });
-  </script>
 </body>
 
 </html>
