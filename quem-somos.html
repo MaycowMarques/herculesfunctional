@@ -61,7 +61,7 @@
             <a href="/" class="font-medium hover:text-yellow-500">Início</a>
           </li>
           <li class="py-2 xl:p-4 block">
-            <a href="/" class="font-medium hover:text-yellow-500">Quem somos</a>
+            <a href="/quem-somos.html" class="font-medium hover:text-yellow-500">Quem somos</a>
           </li>
           <li class="py-2 xl:p-4 block">
             <a href="/plano-individual.html" class="font-medium hover:text-yellow-500">Plano Individual</a>
@@ -80,7 +80,7 @@
     </div>
   </nav>
 
-  <section id="test-offer" class="fixed z-50 bottom-3 right-3 py-4 px-2 lg:p-0 bg-white shadow-xl transition-all">
+  <section id="test-offer" class="hidden md:block fixed z-50 bottom-3 right-3 py-4 px-2 lg:p-0 bg-white shadow-xl transition-all">
     <div class="flex items-center gap-5">
       <button class="p-3" id="test-offer-control">
         <svg class="h-6 w-6 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round"
@@ -117,7 +117,7 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-32 items-center">
         <div>
-          <img src="./assets/images/about.jpg" class="w-full h-auto block rounded-lg object-fit object-center" alt="">
+          <img src="./assets/images/image-1.jpg" class="w-full h-auto block rounded-lg object-fit object-center" alt="">
         </div>
         <div class="text-center lg:text-left">
           <h3 class="mb-4 font-bold text-2xl lg:text-3xl">Apoiado pela ciência. Conduzidos pela paixão. Adaptado para
@@ -152,7 +152,7 @@
         </div>
       </div>
 
-      <p class="lg:w-1/2 my-16 mx-auto text-center text-xl">Acreditamos que o treinamento bem estruturado é a base para
+      <p class="lg:w-1/2 my-20 mx-auto text-center text-2xl">Acreditamos que o treinamento bem estruturado é a base para
         o sucesso do atleta: e queremos levar essa metodologia para seus treinos e seu BOX.</p>
 
       <div class="text-center">
@@ -160,49 +160,47 @@
         <p class="md:mx-auto md:w-2/3">Comprovadamente a planilha mais completa para você alcançar o seu lugar no pódio: onde acreditamos que os atletas do functional fitness devem estar.</p>
       </div>
 
-      <div class="mt-10 swiper mainSwiper">
+      <div class="mt-10 swiper mainSwiper pb-10">
         <div class="swiper-wrapper">
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/1.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/2.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/4.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/6.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/7.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/8.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/9.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/10.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/11.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/12.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/13.png" />
           </div>
-          <div class="swiper-slide bg-white rounded-lg overflow-hidden">
+          <div class="swiper-slide bg-white rounded-lg overflow-hidden hover:cursor-grab active:cursor-grabbing">
             <img src="./assets/images/podiums/14.png" />
           </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
-
-      
     </div>
   </section>
 
@@ -283,7 +281,15 @@
         1024: {
           slidesPerView: 3
         },
-      }
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
     });
 
     var swiper = new Swiper(".mySwiper", {
