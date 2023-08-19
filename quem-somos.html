@@ -42,7 +42,7 @@
 </head>
 
 <body class="bg-custom-100">
-  <section id="test-offer" class="fixed z-50 bottom-3 right-3 p-0 px-2">
+  <section class="fixed z-50 bottom-3 right-3 p-0 px-2">
     <a href="https://api.whatsapp.com/send?phone=5561999081540&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Hercules%20Functional!" class="flex flex-row items-center">
       <h2 class="py-2 pl-4 pr-11 w-60 text-sm text-center bg-green-500 text-white rounded-l-full font-bold translate-x-8">Fale conosco AGORA pelo Whatsapp</h2>
       <span class="z-10 relative">
@@ -157,24 +157,28 @@
 
       <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 xl:gap-10 text-center">
         <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
+          <img src="/assets/images/check.png" class="mx-auto mb-4 w-14 h-auto" alt="">
           <h2 class="mb-2 font-bold text-2xl">No seu ritmo</h2>
           <p>
-            Planos adaptados para seu BOX e treino individual
+            Planilha elite completa e adaptada para 1 hora
           </p>
         </div>
         <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
+          <img src="/assets/images/check.png" class="mx-auto mb-4 w-14 h-auto" alt="">
           <h2 class="mb-2 font-bold text-2xl">Preço justo</h2>
           <p>
             Valores acessíveis para trabalhar sua melhor performance
           </p>
         </div>
         <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
+          <img src="/assets/images/check.png" class="mx-auto mb-4 w-14 h-auto" alt="">
           <h2 class="mb-2 font-bold text-2xl">Especialista</h2>
           <p>
             Prática apoiada pela ciência e assinada por Ramires Tibana
           </p>
         </div>
         <div class="py-8 px-5 bg-white shadow-xl rounded-xl">
+          <img src="/assets/images/check.png" class="mx-auto mb-4 w-14 h-auto" alt="">
           <h2 class="mb-2 font-bold text-2xl">Teste grátis!</h2>
           <p>
             Experimente uma semana e comprove nossa eficiência!
@@ -244,15 +248,8 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./assets/js/globals.js"></script>
   <script>
-    const button = document.querySelector('#menu-button');
-    const menu = document.querySelector('#menu');
-
-
-    button.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-
     var mainSwiper = new Swiper(".mainSwiper", {
       spaceBetween: 30,
       breakpoints: {
@@ -290,18 +287,8 @@
         },
       }
     });
-
-    let content = document.getElementById('test-offer');
-    let contentControl = document.getElementById('test-offer-control');
-
-    contentControl.addEventListener('click', function (event) {
-      content.classList.remove('right-3')
-      content.classList.add('right-0')
-      content.classList.add('translate-x-full')
-    });
   </script>
-  <script src="./assets/js/globals.js"></script>
-  <script src="./assets/js/globals.js"></script>
+  
 </body>
 
 </html>
